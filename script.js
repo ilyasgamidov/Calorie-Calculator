@@ -51,6 +51,13 @@ function getDinamicInfo(selector) {
     let input = document.querySelector(selector);
 
     input.addEventListener('input', () => {
+
+        if (input.value.match(/\D/g)) {
+            input.style.border = '1px solid red';
+        } else {
+            input.style.border = '1px solid #444';
+        }
+
         switch (input.getAttribute('id')) {
             case 'height' :
                 height = +input.value;

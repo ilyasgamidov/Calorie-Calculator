@@ -125,6 +125,8 @@ h2 {
 }
 
 input {
+    border: 1px solid #444;
+    outline:none;
     width: 160px;
     padding-left: 20px;
 }
